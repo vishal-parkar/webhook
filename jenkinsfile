@@ -1,5 +1,14 @@
-print "Hello World!\n"
-print "Hello java!\n"
-print "Hello mytesting!\n"
+#!groovy
+import groovy.json.JsonSlurperClassic
+node {
 
-
+   stage('checkout source') {
+        // when running in multi-branch job, one must issue this command
+        checkout scm
+    }
+    
+     stage('Print Hello') {
+        
+        print "Hello World!\n"
+    } 
+}
