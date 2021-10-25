@@ -10,7 +10,6 @@ node {
      stage('Print Hello') {
         
         print "Hello World!\n"
-        print "my World!\n"
-        print "your world World!\n"
+        
     } 
 }
